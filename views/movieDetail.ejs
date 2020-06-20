@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head')  %>
+
+<body>
+  <div class="app">
+    <header>
+      <%- include('./partials/header')  %>
+    </header>
+    <div class="list-movies">
+      <h1><%= pelicula.title %></h1>
+      <ul>
+        <li>Awards: <%= pelicula.awards %></li>
+        <li>Length: <%= pelicula.length %></li>
+        <li>Release Date: <%= pelicula.release_date %></li>
+        <li>Rating: <%= pelicula.rating %></li>
+      </ul>
+      <div class="row m-0 w-100 justify-content-center">
+        <div class="row justify-content-between w-50 movie-detail_button-container">
+          <form action="/movies/delete/<%-pelicula.id%>?_method=DELETE" method="POST">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+          <a href="/movies/edit/<%-pelicula.id%>"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <%- include('./partials/footer')  %>
+  <%- include('./partials/scripts')  %>
+</body>
+
+</html>

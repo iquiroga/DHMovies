@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head')  %>
+
+<body>
+  <header>
+    <%- include('./partials/header')  %>
+  </header>
+  <div class="list-movies">
+    <h1>Recommended Movies</h1>
+    <ul>
+      <% for( let i = 0; i < peliculas.length; i++ ) { %>
+      <a href="/movies/detail/<%-peliculas[i].id%>">
+        <li>
+          <%= peliculas[i].title %>
+        </li>
+      </a>
+      <% } %>
+    </ul>
+  </div>
+  <footer class="mastfoot mt-auto">
+    <%- include('./partials/footer')  %>
+  </footer>
+  <%- include('./partials/scripts')  %>
+</body>
+
+</html>

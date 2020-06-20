@@ -1,0 +1,30 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light header">
+    <a class="navbar-brand header-title" href="/">DH Movies</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/movies">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/movies/new">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/movies/recommended">Recommended</a>
+        </li>
+      </ul>
+      <div class="header-right-navbar">
+        <a href="/movies/create"><button type="button" class="btn btn btn-outline-light my-2 my-sm-0">Add Movie</button></a>
+        <form action="/movies/search" method="POST" class="form-inline my-2 my-lg-0">
+          <input type="search" placeholder="Search" aria-label="Search" name="search" id="search"
+            class="form-control mr-sm-2">
+          <button type="submit" class="btn btn btn-outline-light my-2 my-sm-0">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>

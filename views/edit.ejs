@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head')  %>
+
+<body>
+  <%- include('./partials/header')  %>
+
+  <main class="list-movies">
+    <h1><%= pelicula.title %></h1>
+    <div class="container fluid">
+      <form action="/movies/edit/<%= pelicula.id %>?_method=PUT" method="POST">
+        <div class="form-group">
+          <label for="title">New title</label>
+          <input type="text" name="title" id="title" placeholder="<%= pelicula.title %>" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="awards">Awards</label>
+          <input type="text" name="awards" id="awards" placeholder="<%= pelicula.awards %>" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="length">Length</label>
+          <input type="text" name="length" id="length" placeholder="<%= pelicula.length %>" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="release_date">Release Date</label>
+          <input type="date" name="release_date" id="release_date" placeholder="<%= pelicula.release_date %>"
+            class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="rating">Rating</label>
+          <input type="text" name="rating" id="rating" placeholder="<%= pelicula.rating %>" class="form-control">
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-outline-dark">Edit</button>
+        </div><br>
+      </form>
+    </div>
+  </main>
+
+  <%- include('./partials/footer')  %>
+
+  <%- include('./partials/scripts')  %>
+</body>
+
+</html>

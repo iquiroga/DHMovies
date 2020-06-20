@@ -1,0 +1,73 @@
+body{
+  background-color: #eeeeee;
+}
+
+.header{
+  background-color: #222831;
+}
+
+.header-title{
+  color: #d50000!important;
+}
+
+.nav-link{
+  color: whitesmoke!important;
+}
+
+.list-movies{
+  min-height: calc(100vh - 96px);
+}
+
+.list-movies h1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.list-movies ul{
+  padding: 0 1.5rem;
+}
+
+.list-movies a{
+  color: black;
+  list-style: none;
+  padding-bottom: 4px;
+}
+
+.list-movies a:hover{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer{
+  background-color: #222831;
+  width: 100%;
+}
+
+footer p{
+  color: whitesmoke;
+}
+
+@media (min-width: 768px) {
+  .list-movies li{
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-sizer{
+    max-width: 520px!important;
+}
+}
+
+@media (min-width: 1024px) {
+  .header-right-navbar{
+    display: flex;
+    min-width: 395px;
+    justify-content: space-between;
+  }
+
+  .movie-detail_button-container{
+    width: 20%!important;
+  }
+
+}
