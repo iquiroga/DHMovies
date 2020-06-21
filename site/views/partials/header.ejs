@@ -18,10 +18,19 @@
         </li>
       </ul>
       <div class="header-right-navbar">
-        <a href="/movies/create"><button type="button" class="btn btn btn-outline-light my-2 my-sm-0">Add Movie</button></a>
-        <form action="/movies/search" method="POST" class="form-inline my-2 my-lg-0">
+        <a href="/movies/create"><button type="button" class="btn btn btn-outline-light my-2 my-sm-0">Add
+            Movie</button></a>
+        <form action="/movies/search" method="POST" class="form-inline my-2 my-lg-0 header-form">
+
           <input type="search" placeholder="Search" aria-label="Search" name="search" id="search"
             class="form-control mr-sm-2">
+          
+            <select class="form-control header-form-select" name="order">
+              <option selected value="ASC">Ascendent</option>
+              <option value="DESC">Descendent</option>
+            </select>
+          
+
           <button type="submit" class="btn btn btn-outline-light my-2 my-sm-0">Search</button>
         </form>
       </div>

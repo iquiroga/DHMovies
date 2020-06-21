@@ -10,6 +10,18 @@ body{
   color: #d50000!important;
 }
 
+.header-form{
+  justify-content: space-between;
+}
+
+.header-form input{
+  width: 68%;
+}
+
+.header-form-select{
+  width: 25%;
+}
+
 .nav-link{
   color: whitesmoke!important;
 }
@@ -22,6 +34,10 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.list-movies h2{
+  font-size: medium;
 }
 
 .list-movies ul{
@@ -39,6 +55,15 @@ body{
   font-weight: bold;
 }
 
+.list-movies li{
+  display: flex;
+  justify-content: center;
+}
+
+.list-movies p{
+  margin-bottom: .5rem;
+}
+
 footer{
   background-color: #222831;
   width: 100%;
@@ -49,21 +74,28 @@ footer p{
 }
 
 @media (min-width: 768px) {
-  .list-movies li{
-    display: flex;
-    justify-content: center;
-  }
-
   .form-sizer{
     max-width: 520px!important;
-}
+  }
+
+  .header-form{
+    justify-content: end;
+  }
+
+  .header-form button{
+    margin-left: 6px;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .header-right-navbar{
     display: flex;
     min-width: 395px;
     justify-content: space-between;
+  }
+
+  .header-right-navbar a{
+    margin-right: 7px;
   }
 
   .movie-detail_button-container{

@@ -1,0 +1,23 @@
+ALTER TABLE movies ADD rating float;
+
+Update movies Set rating=7.8 Where title='Avatar';
+Update movies Set rating=7.8 Where title='Titanic';
+Update movies Set rating=8.6 Where title='La Guerra de las galaxias: Episodio VI';
+Update movies Set rating=7 Where title='La Guerra de las galaxias: Episodio VII';
+Update movies Set rating=8.1 Where title='Parque Jurasico';
+Update movies Set rating=8.1 Where title='Harry Potter y las Reliquias de la Muerte - Parte 2';
+Update movies Set rating=6.2 Where title='Transformers: el lado oscuro de la luna';
+Update movies Set rating=7.6 Where title='Harry Potter y la piedra filosofal';
+Update movies Set rating=7.4 Where title='Harry Potter y la cámara de los secretos';
+Update movies Set rating=8.5 Where title='El rey león';
+Update movies Set rating=6.4 Where title='Alicia en el país de las maravillas';
+Update movies Set rating=8.1 Where title='Buscando a Nemo';
+Update movies Set rating=8.3 Where title='Toy Story';
+Update movies Set rating=7.9 Where title='Toy Story 2';
+Update movies Set rating=8.6 Where title='La vida es bella';
+Update movies Set rating=7.6 Where title='Mi pobre angelito';
+Update movies Set rating=8.1 Where title='Intensamente';
+Update movies Set rating=7.2 Where title='Carrozas de fuego';
+Update movies Set rating=7.8 Where title='Big';
+Update movies Set rating=7.7 Where title='I am Sam';
+Update movies Set rating=7.1 Where title='Hotel Transylvania';

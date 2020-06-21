@@ -39,7 +39,7 @@ let moviesController = {
     let movie = req.body.search;
     db.Peliculas.findAll({
       order: [
-        ['title', 'ASC']
+        ['title', req.body.order]
       ],
       where: {
         title: {[Op.substring]: movie}

@@ -9,16 +9,6 @@
     </header>
     <div class="list-movies">
       <h1>All Movies</h1>
-      <div class="d-flex flex-end">
-        <label for="order">Order by:</label>
-        <select name="order" id="order">
-          <option value="asc">Ascendent</option>
-          <option value="desc">Descendent</option>
-          <option value="rating">Rating</option>
-          <option value="awards">Awards</option>
-          <option value="date">Release date</option>
-        </select>
-      </div>
       <ul>
         <% for( let i = 0; i < peliculas.length; i++ ) { %>
         <a href="/movies/detail/<%-peliculas[i].id%>">
